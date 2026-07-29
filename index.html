@@ -1,12 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web de prueba</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Online</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fuente Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
-    <h1>web de prueba</h1>
+
+  <!-- Encabezado y Navegación -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="#" class="logo">URBAN<span>STORE</span></a>
+
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#ofertas">Ofertas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="cart-icon">
+        <a href="#carrito" class="cart-btn">
+          🛒 <span class="badge">3</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Principal / Hero -->
+  <section class="hero" id="inicio">
+    <div class="container hero-content">
+      <h2>Nueva Colección 2026</h2>
+      <p>Descubre las últimas tendencias con descuentos de hasta un 30% en productos seleccionados.</p>
+      <a href="#productos" class="btn btn-primary">Ver Catálogo</a>
+    </div>
+  </section>
+
+  <!-- Ventajas / Servicios -->
+  <section class="features container">
+    <div class="feature-card">
+      <span class="icon">🚚</span>
+      <h3>Envío Gratis</h3>
+      <p>En compras mayores a $50</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon">🛡️</span>
+      <h3>Garantía de Devolución</h3>
+      <p>30 días para cambios sin cargo</p>
+    </div>
+    <div class="feature-card">
+      <span class="icon">💳</span>
+      <h3>Pago Seguro</h3>
+      <p>Múltiples medios de pago</p>
+    </div>
+  </section>
+
+  <!-- Sección de Productos -->
+  <section class="products container" id="productos">
+    <h2 class="section-title">Productos Destacados</h2>
+
+    <div class="product-grid">
+
+      <!-- Producto 1 -->
+      <article class="product-card">
+        <div class="badge-tag">Nuevo</div>
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Zapatillas Deportivas Red">
+        </div>
+        <div class="product-info">
+          <span class="category">Calzado</span>
+          <h3 class="product-title">Zapatillas Running Pro</h3>
+          <p class="price">$89.99 <span class="old-price">$110.00</span></p>
+          <a href="#" class="btn btn-card">Añadir al Carrito</a>
+        </div>
+      </article>
+
+      <!-- Producto 2 -->
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80" alt="Reloj Inteligente">
+        </div>
+        <div class="product-info">
+          <span class="category">Electrónica</span>
+          <h3 class="product-title">Reloj SmartFit V2</h3>
+          <p class="price">$129.99</p>
+          <a href="#" class="btn btn-card">Añadir al Carrito</a>
+        </div>
+      </article>
+
+      <!-- Producto 3 -->
+      <article class="product-card">
+        <div class="badge-tag sale">-20%</div>
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=600&q=80" alt="Auriculares Inalámbricos">
+        </div>
+        <div class="product-info">
+          <span class="category">Audio</span>
+          <h3 class="product-title">Auriculares Bluetooth Premium</h3>
+          <p class="price">$59.99 <span class="old-price">$75.00</span></p>
+          <a href="#" class="btn btn-card">Añadir al Carrito</a>
+        </div>
+      </article>
+
+      <!-- Producto 4 -->
+      <article class="product-card">
+        <div class="product-image">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=600&q=80" alt="Mochila">
+        </div>
+        <div class="product-info">
+          <span class="category">Accesorios</span>
+          <h3 class="product-title">Mochila Urbana Impermeable</h3>
+          <p class="price">$45.00</p>
+          <a href="#" class="btn btn-card">Añadir al Carrito</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-col">
+        <a href="#" class="logo text-white">URBAN<span>STORE</span></a>
+        <p>Tu tienda de confianza para productos de alta calidad y envíos a todo el país.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Enlaces Rápidos</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <p>Email: contacto@urbanstore.com</p>
+        <p>Teléfono: +123 456 789</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 URBANSTORE. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
 </body>
 </html>
